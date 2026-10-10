@@ -1,0 +1,28 @@
+# --- Secrets: never commit real credentials -------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Local logs / scratch output ------------------------------------------
+*.log
+psql-*.out
+
+# --- Editor / OS cruft -----------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Local Postgres scratch data ------------------------------------------
+pgdata/
+*.pgdata/
+
+# --- Python helper environments (not required by this project) ------------
+__pycache__/
+*.pyc
+.venv/
+venv/
